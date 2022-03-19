@@ -1,7 +1,7 @@
-import type {NextPage} from 'next'
+import {NextPage} from "next";
 import GlobalHead from "../components/GlobalHead";
 
-const Home: NextPage = () => {
+const TOS: NextPage = () => {
     return (
         <>
             <GlobalHead/>
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
 }
 
 // noinspection JSUnusedGlobalSymbols
-export default Home
+export default TOS
