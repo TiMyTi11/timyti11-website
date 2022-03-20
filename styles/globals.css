@@ -5,7 +5,7 @@
 html {
     @apply bg-background scroll-smooth overflow-y-scroll;
     /*noinspection CssUnknownProperty*/
-    scrollbar-color: #FF00CF #0085F2;
+    scrollbar-color: #aa008b #0085F2;
 }
 
 html::-webkit-scrollbar-track-piece {
@@ -19,7 +19,7 @@ html::-webkit-scrollbar-track-piece {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FF00CF;
+    background: #aa008b;
 }
 
 ::-webkit-scrollbar-corner {
