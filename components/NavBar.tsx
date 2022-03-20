@@ -29,8 +29,18 @@ export default function NavBar() {
                 <nav className={`${open ? "flex" : "hidden"} flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
                     <div className="text-center p-1 md:p-5">
                         <Link href="/">
-                            <a className="nav">
+                            <a className="mx-3">
                                 Home
+                            </a>
+                        </Link>
+                        <Link href="/portfolio">
+                            <a className="mx-3">
+                                Portfolio
+                            </a>
+                        </Link>
+                        <Link href="/tos">
+                            <a className="mx-3">
+                                TOS
                             </a>
                         </Link>
                     </div>

@@ -1,4 +1,7 @@
 const removeImports = require("next-remove-imports")();
+const withTM = require('next-transpile-modules')([
+  'tsparticles'
+]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -10,4 +13,4 @@ const nextConfig = {
   }
 }
 
-module.exports = removeImports(nextConfig)
+module.exports = withTM(removeImports(nextConfig))
