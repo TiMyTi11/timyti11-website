@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply bg-background scroll-smooth overflow-y-scroll;
+    /*noinspection CssUnknownProperty*/
+    scrollbar-color: #FF00CF #0085F2;
+}
+
+html::-webkit-scrollbar-track-piece {
+    background-color: #0085F2;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #0085F2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF00CF;
+}
+
+::-webkit-scrollbar-corner {
+    background: #0085F2;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    @apply max-w-screen-xl mx-auto;
+}
