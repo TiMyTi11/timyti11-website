@@ -3,27 +3,7 @@
 @tailwind utilities;
 
 html {
-    @apply bg-background scroll-smooth overflow-y-scroll;
-    /*noinspection CssUnknownProperty*/
-    scrollbar-color: #aa008b #0085F2;
-}
-
-html::-webkit-scrollbar-track-piece {
-    background-color: #0085F2;
-}
-
-::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-    background: #0085F2;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #aa008b;
-}
-
-::-webkit-scrollbar-corner {
-    background: #0085F2;
+    @apply scroll-smooth overflow-y-scroll;
 }
 
 body {

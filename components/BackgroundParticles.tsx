@@ -33,7 +33,7 @@ export default function BackgroundParticles() {
                             "distance": 200,
                             "duration": 0.4,
                             "factor": 1,
-                            "maxSpeed": 50,
+                            "maxSpeed": 30,
                             "speed": 1
                           },
                           "bubble": {
@@ -44,7 +44,7 @@ export default function BackgroundParticles() {
                             "size": 0
                           },
                           "connect": {
-                            "distance": 80,
+                            "distance": 100,
                             "links": {
                               "opacity": 0.5
                             },
@@ -129,7 +129,7 @@ export default function BackgroundParticles() {
                             "factor": 1000
                           },
                           "limit": 0,
-                          "value": 160
+                          "value": 80
                         },
                         "opacity": {
                           "random": {

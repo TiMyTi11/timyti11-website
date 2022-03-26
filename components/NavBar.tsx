@@ -1,50 +1,67 @@
 import Link from "next/link";
-import {useState} from "react";
 
 export default function NavBar() {
-    const [open, setOpen] = useState(false);
-
     return (
-        <header className="text-xl header text-text font-bold h-20">
-            <div className="container flex flex-col md:items-center md:justify-between md:flex-row">
-                <div className="flex flex-row items-center justify-between w-full">
-                    <h2 className="font-bold text-lg md:text-2xl m-4">TiMyTi11</h2>
-                    <button aria-label="Expand navigation bar"
-                            className="justify-self-end md:hidden rounded-lg focus:outline-none focus:shadow-outline mr-8"
-                            onClick={() => setOpen(!open)}>
-                        <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
-                            {
-                                open ?
-                                    <path fillRule="evenodd"
-                                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                          clipRule="evenodd" />
-                                    :
-                                    <path fillRule="evenodd"
-                                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                          clipRule="evenodd" />
-                            }
-                        </svg>
-                    </button>
-                </div>
-                <nav className={`${open ? "flex" : "hidden"} flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
-                    <div className="text-center p-1 md:p-5">
-                        <Link href="/">
-                            <a className="mx-3">
-                                Home
-                            </a>
-                        </Link>
-                        <Link href="/portfolio">
-                            <a className="mx-3">
-                                Portfolio
-                            </a>
-                        </Link>
-                        <Link href="/tos">
-                            <a className="mx-3">
-                                TOS
-                            </a>
-                        </Link>
+        <header className="text-xl py-4 header text-text font-bold bg-base-200">
+            <div className="container navbar bg-base-300 rounded-2xl shadow-lg">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                      d="M4 6h16M4 12h8m-8 6h16"/>
+                            </svg>
+                        </label>
+                        <ul tabIndex={0}
+                            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li tabIndex={0}>
+                                <a className="justify-between">
+                                    Parent
+                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                                    </svg>
+                                </a>
+                                <ul className="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
                     </div>
-                </nav>
+                    <a className="btn btn-ghost normal-case text-xl">TiMyTi11</a>
+                </div>
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal p-0">
+                        <li className="px-2">
+                            <Link href="/">
+                                <a>
+                                    Home
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="px-2">
+                            <Link href="/portfolio">
+                                <a>
+                                    Portfolio
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="px-2">
+                            <Link href="/tos">
+                                <a>
+                                    TOS
+                                </a>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="navbar-end">
+                    <a className="btn">Contact Me</a>
+                </div>
             </div>
         </header>
     );
