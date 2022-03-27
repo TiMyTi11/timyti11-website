@@ -114,7 +114,7 @@ export default function NavBar({theme, setTheme}: {theme: string, setTheme: Disp
                             </li>
                         </ul>
                     </div>
-                    <a className="ml-4 btn">Contact Me</a>
+                    <a href="https://discord.gg/HS6wMTGD6u" className="ml-4 btn">Contact Me</a>
                 </div>
             </div>
         </header>
