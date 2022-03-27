@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function GlobalHead({pageName}: {pageName: string}) {
     const seoTitle = "TiMyTi11"
-    const seoDescription = "I make discord servers, and i am a great staff for hire!"
+    const seoDescription = "I make discord servers, and I am a great staff to hire!"
     const url = "https://timyti11.com"
     const logo = "/logo.png"
 
