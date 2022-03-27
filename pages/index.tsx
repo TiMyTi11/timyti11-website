@@ -4,7 +4,7 @@ import GlobalHead from "../components/GlobalHead";
 const Home: NextPage = () => {
     return (
         <>
-            <GlobalHead/>
+            <GlobalHead pageName="Home"/>
             <div className="hero min-h-screen">
                 <div className="hero-content text-center">
                     <div className="max-w-md">

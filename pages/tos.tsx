@@ -4,7 +4,7 @@ import GlobalHead from "../components/GlobalHead";
 const TOS: NextPage = () => {
     return (
         <>
-            <GlobalHead/>
+            <GlobalHead pageName="TOS"/>
             <div className="hero min-h-screen pt-20">
                 <div className="hero-content text-left">
                     <div className="max-w-lg">

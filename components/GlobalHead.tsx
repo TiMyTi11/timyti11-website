@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function GlobalHead() {
+export default function GlobalHead({pageName}: {pageName: string}) {
     const seoTitle = "TiMyTi11"
     const seoDescription = "I make discord servers, and i am a great staff for hire!"
     const url = "https://timyti11.com"
@@ -10,7 +10,7 @@ export default function GlobalHead() {
         <Head>
             <meta charSet="utf-8"/>
 
-            <title>{seoTitle}</title>
+            <title>{seoTitle + " - " + pageName}</title>
             <meta name="description" content={seoDescription}/>
 
             <link rel="icon" href="/favicon.ico"/>
