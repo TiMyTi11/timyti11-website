@@ -2,12 +2,15 @@ import {NextPage} from "next";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import BackgroundParticles from "./BackgroundParticles";
+import {useState} from "react";
 
 const Layout: NextPage = ({children}) => {
+    const [theme, setTheme] = useState("dark");
+
     return (
-        <div className="min-h-screen min-w-screen flex flex-col z-50 bg-background text-text scroller">
+        <div data-theme={theme} className="min-h-screen min-w-screen flex flex-col z-50 bg-background text-text scroller">
             <BackgroundParticles/>
-            <NavBar/>
+            <NavBar theme={theme} setTheme={setTheme}/>
             {children}
             <Footer/>
         </div>

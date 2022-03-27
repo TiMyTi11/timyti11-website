@@ -23,7 +23,6 @@ export default function GlobalHead() {
             <meta name="format-detection" content="telephone=no"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-
             <meta name="og:type" content="website"/>
             <meta name="og:url" content={url}/>
             <meta name="og:title" content={seoTitle}/>

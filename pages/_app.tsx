@@ -11,4 +11,5 @@ function App({Component, pageProps}: AppProps) {
     )
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default App

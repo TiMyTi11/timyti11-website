@@ -9,7 +9,7 @@ const Home: NextPage = () => {
                 <div className="hero-content text-center">
                     <div className="max-w-md">
                         <h1 className="text-5xl font-bold">Hi! I&apos;m TiMyTi11</h1>
-                        <p className="py-6">I offer Discord Setup and Art Design services.</p>
+                        <p className="py-6 text-lg">I offer Discord Setup and Art Design services.</p>
                         <button className="btn btn-primary">Read More</button>
                     </div>
                 </div>

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Logo from "../public/assets/logo_transparent.png";
 import Image from "next/image";
+import {Dispatch, SetStateAction} from "react";
 
-export default function NavBar() {
+export default function NavBar({theme, setTheme}: {theme: string, setTheme: Dispatch<SetStateAction<string>>}) {
     return (
         <header className="fixed min-w-full z-30 text-xl px-2 py-4 text-text font-semibold">
             <div className="mx-auto container navbar bg-base-300 rounded-2xl shadow-lg">
@@ -37,6 +38,29 @@ export default function NavBar() {
                                         TOS
                                     </a>
                                 </Link>
+                            </li>
+                            <li className="px-2" tabIndex={0}>
+                                <a className="justify-between">
+                                    Theme
+                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                                    </svg>
+                                </a>
+                                <ul className="p-2 bg-base-200">
+                                    <li className="pb-2">
+                                        <button className={theme === "dark" ? "btn-primary" : ""} onClick={() => setTheme("dark")}>Dark</button>
+                                    </li>
+                                    <li className="py-2">
+                                        <button className={theme === "night" ? "btn-primary" : ""} onClick={() => setTheme("night")}>Night</button>
+                                    </li>
+                                    <li className="py-2">
+                                        <button className={theme === "dracula" ? "btn-primary" : ""} onClick={() => setTheme("dracula")}>Dracula</button>
+                                    </li>
+                                    <li className="pt-2">
+                                        <button className={theme === "forest" ? "btn-primary" : ""} onClick={() => setTheme("forest")}>Forest</button>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -73,7 +97,24 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Contact Me</a>
+                    <div className="hidden md:block dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost rounded-btn">Theme</label>
+                        <ul tabIndex={0} className="menu dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-52 mt-4 font-bold">
+                            <li className="pb-2">
+                                <button onClick={() => setTheme("dark")}>Dark</button>
+                            </li>
+                            <li className="py-2">
+                                <button onClick={() => setTheme("night")}>Night</button>
+                            </li>
+                            <li className="py-2">
+                                <button onClick={() => setTheme("dracula")}>Dracula</button>
+                            </li>
+                            <li className="pt-2">
+                                <button onClick={() => setTheme("forest")}>Forest</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <a className="ml-4 btn">Contact Me</a>
                 </div>
             </div>
         </header>
