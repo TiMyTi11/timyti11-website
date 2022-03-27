@@ -18,7 +18,7 @@ const Portfolio: NextPage = () => {
         <>
             <GlobalHead pageName="Portfolio"/>
             <div className="hero min-h-screen pt-20">
-                <div className="hero-content text-left">
+                <div className="hero-content text-left flex flex-col">
                     <div className="max-w-md flex-wrap">
                         {
                             Object.keys(allImages).map((key) => {
@@ -30,6 +30,7 @@ const Portfolio: NextPage = () => {
                             })
                         }
                     </div>
+                    <a href="https://www.behance.net/TiMyTi11" className="btn btn-primary mx-auto">See More</a>
                 </div>
             </div>
         </>
