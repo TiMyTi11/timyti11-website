@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     return (
-        <header className="fixed min-w-full z-30 text-xl px-2 py-4 text-text font-bold">
+        <header className="fixed min-w-full z-30 text-xl px-2 py-4 text-text font-semibold">
             <div className="mx-auto container navbar bg-base-300 rounded-2xl shadow-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -38,7 +38,7 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">TiMyTi11</a>
+                    <a className="btn btn-ghost normal-case font-bold text-xl">TiMyTi11</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
