@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Logo from "../public/assets/logo_transparent.png";
+import Image from "next/image";
 
 export default function NavBar() {
     return (
@@ -38,7 +40,12 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case font-bold text-xl">TiMyTi11</a>
+                    <Link href="/">
+                        <a className="btn btn-ghost normal-case font-bold text-xl flex flex-row">
+                            <Image className="mr-2" width={24} height={24} src={Logo} alt="TiMyTI11 Logo"/>
+                            <p className="ml-2 my-auto">TiMyTi11</p>
+                        </a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
