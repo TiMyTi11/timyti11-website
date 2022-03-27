@@ -5,10 +5,10 @@ const TOS: NextPage = () => {
     return (
         <>
             <GlobalHead pageName="TOS"/>
-            <div className="hero min-h-screen pt-20">
+            <div className="hero min-h-screen pt-28">
                 <div className="hero-content text-left">
                     <div className="max-w-lg">
-                        <h1 className="text-5xl font-bold">TERMS OF SERVICE</h1>
+                        <h1 className="text-5xl font-bold uppercase">Terms of Service</h1>
                         <p className="mb-4 text-lg font-light">By using my services you automatically agree to the following terms</p>
                         <div className="card text-xl font-semibold bg-base-200 shadow-xl">
                             <div className="card-body">

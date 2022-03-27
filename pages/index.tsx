@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     return (
         <>
             <GlobalHead pageName="Home"/>
-            <div className="hero min-h-screen">
+            <div className="hero min-h-screen pt-28">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
                         <h1 className="text-5xl font-bold">Hi! I&apos;m TiMyTi11</h1>

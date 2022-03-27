@@ -6,7 +6,7 @@ import {Dispatch, SetStateAction} from "react";
 export default function NavBar({theme, setTheme}: {theme: string, setTheme: Dispatch<SetStateAction<string>>}) {
     return (
         <header className="fixed min-w-full z-30 text-xl px-2 py-4 text-text font-semibold">
-            <div className="mx-auto container navbar bg-base-300 rounded-2xl shadow-lg">
+            <div className="mx-auto container navbar bg-base-300 rounded-2xl shadow-2xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
