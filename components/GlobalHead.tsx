@@ -31,7 +31,7 @@ export default function GlobalHead() {
             <meta name="og:description" content={seoDescription}/>
             <meta name="og:image" content={logo}/>
 
-            <meta name="theme-color" content="#0E6AC7"/>
+            <meta name="theme-color" content={"#FE00CD"}/>
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:url" content={url}/>
             <meta name="twitter:title" content={seoTitle}/>
