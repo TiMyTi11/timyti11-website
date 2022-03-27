@@ -14,7 +14,6 @@ function mapFiles(context: __WebpackModuleApi.RequireContext): { [key: string]: 
 const allImages = mapFiles(require.context('../public/assets/portfolio/', false, /\.png$/));
 
 const Portfolio: NextPage = () => {
-    console.log(allImages);
     return (
         <>
             <GlobalHead pageName="Portfolio"/>
