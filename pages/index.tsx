@@ -5,6 +5,7 @@ import AE from '../public/assets/adobe/ae.png'
 import PS from '../public/assets/adobe/ps.png'
 import AI from '../public/assets/adobe/ai.png'
 import Image from "next/image";
+import ReviewBox from "../components/ReviewBox";
 
 const Home: NextPage = () => {
     return (
@@ -69,8 +70,16 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="py-16 min-h-screen flex flex-col justify-center">
-
+                <section className="py-16 min-h-screen flex flex-col justify-center p-2">
+                    <h2 className="z-0 text-3xl font-bold mb-2 mx-auto">What do my clients say?</h2>
+                    <div className="container mx-auto px-8">
+                        <div className="flex flex-wrap justify-center w-full">
+                            <ReviewBox text={"Chill and easy to talk to. Doesn't mind making any changes. - Tree"}/>
+                            <ReviewBox text={"Super chill, fast, and knows what they are doing! - LightDarkness"}/>
+                            <ReviewBox text={"Nice and helpful. Quickly responded and made it for me. - KacperM"}/>
+                            <ReviewBox text={"Very nice, did everything, perfectly, did it quickly, and helped a lot. - Sao"}/>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>

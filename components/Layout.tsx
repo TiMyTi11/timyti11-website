@@ -8,7 +8,7 @@ const Layout: NextPage = ({children}) => {
     const [theme, setTheme] = useState("dark");
 
     return (
-        <div data-theme={theme} className="min-h-screen min-w-screen flex flex-col z-50 bg-background text-text scroller">
+        <div data-theme={theme} className="min-h-screen min-w-screen flex flex-col bg-background text-text scroller">
             <BackgroundParticles/>
             <NavBar theme={theme} setTheme={setTheme}/>
             {children}
