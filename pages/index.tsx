@@ -41,7 +41,7 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="container mx-auto px-8 mt-44">
+                    <div className="container mx-auto px-8 mt-24 md:mt-64">
                         <div className="flex flex-col md:flex-row justify-center w-full">
                             <div
                                 className="p-4 max-w-lg z-0 h-full bg-base-300 rounded-box mx-auto md:mx-0 my-auto">
