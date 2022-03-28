@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function GlobalHead({pageName}: {pageName: string}) {
+export default function GlobalHead({pageName}: { pageName: string }) {
     const seoTitle = "TiMyTi11"
     const seoDescription = "I make discord servers, and I am a great staff to hire!"
     const url = "https://timyti11.com"

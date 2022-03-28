@@ -14,6 +14,10 @@ body {
     @apply max-w-screen-xl mx-auto;
 }
 
+.header-height {
+    min-height: calc(100vh - 0.5rem);
+}
+
 @layer utilities {
     .masonry {
         column-count: 1;
@@ -34,4 +38,12 @@ body {
 
 .break-inside {
     break-inside: avoid;
+}
+
+.sticky {
+    @apply fixed top-0;
+}
+
+.sticky + main {
+    @apply pt-4;
 }

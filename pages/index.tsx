@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <>
             <GlobalHead pageName="Home"/>
             <main>
-                <header className="hero min-h-screen pt-28">
+                <header className="hero header-height flex justify-center">
                     <div className="hero-content text-center">
                         <div className="max-w-md">
                             <h1 className="text-5xl font-bold">Hi! I&apos;m TiMyTi11</h1>
@@ -77,7 +77,8 @@ const Home: NextPage = () => {
                             <ReviewBox text={"Chill and easy to talk to. Doesn't mind making any changes. - Tree"}/>
                             <ReviewBox text={"Super chill, fast, and knows what they are doing! - LightDarkness"}/>
                             <ReviewBox text={"Nice and helpful. Quickly responded and made it for me. - KacperM"}/>
-                            <ReviewBox text={"Very nice, did everything, perfectly, did it quickly, and helped a lot. - Sao"}/>
+                            <ReviewBox
+                                text={"Very nice, did everything, perfectly, did it quickly, and helped a lot. - Sao"}/>
                         </div>
                     </div>
                 </section>
