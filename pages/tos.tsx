@@ -14,10 +14,10 @@ const TOS: NextPage = () => {
                             <div className="card-body">
                                 <ul className="list-disc ml-4 my-2 gap-2">
                                     <li>Payments can only be made via PayPal.</li>
-                                    <li>You are not allowed to resell any products made by me.</li>
+                                    <li>You are not allowed to resell any products made by me, unless I give you explicit permission to do so.</li>
                                     <li>Refunds are only allowed before I start working.</li>
-                                    <li>The client must specify good what they need, after we discuss the payment is made,
-                                        and I start working, additional things may make a price change.
+                                    <li>The client must describe well what they need. After we discuss it, the payment is made,
+                                        and I start working. Additional things may make a price change.
                                     </li>
                                     <li>I will not make anything illegal, NSFW, ...</li>
                                 </ul>
