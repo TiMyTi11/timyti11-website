@@ -12,16 +12,16 @@ const Home: NextPage = () => {
         <>
             <GlobalHead pageName="Home"/>
             <main>
-                <header className="hero header-height flex justify-center">
+                <header className="hero header-height">
                     <div className="hero-content text-center">
                         <div className="max-w-md">
                             <h1 className="text-5xl font-bold">Hi! I&apos;m TiMyTi11</h1>
                             <p className="py-6 text-lg">I offer Discord Setup and Art Design services.</p>
-                            <button className="btn btn-primary">Read More</button>
+                            <a href="#about" className="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </header>
-                <section className="py-16 min-h-screen flex flex-col justify-center">
+                <section id="about" className="py-16 min-h-screen flex flex-col justify-center">
                     <div className="container mx-auto px-8">
                         <div className="flex flex-col md:flex-row justify-center w-full">
                             <div

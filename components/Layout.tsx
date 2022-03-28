@@ -10,10 +10,10 @@ const Layout: NextPage = ({children}) => {
 
     useEffect(() => {
         const navbar = document.getElementById("navbar")!;
-        const sticky = navbar.offsetTop;
+        const topAd = document.getElementById("top-ad")!;
 
         window.onscroll = () => {
-            if (window.scrollY >= sticky) {
+            if (window.scrollY >= topAd.clientHeight) {
                 navbar.classList.add("sticky")
             } else {
                 navbar.classList.remove("sticky");

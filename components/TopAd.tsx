@@ -3,8 +3,8 @@ import Blockhost from '../public/assets/blockhost.webp'
 
 export default function TopAd() {
     return (
-        <div className="bg-base-300 p-1 z-0">
-            <div className="container mx-auto font-semibold flex flex-row md:justify-center">
+        <div id="top-ad" className="bg-base-300 p-1 z-0">
+            <div className="container mx-auto font-semibold flex flex-row justify-center">
                 <div className="mr-1 flex flex-col justify-center">
                     <Image alt="Blockhost Logo" src={Blockhost} width={18} height={18}/>
                 </div>
