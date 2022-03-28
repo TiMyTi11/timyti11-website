@@ -65,7 +65,7 @@ export default function NavBar({theme, setTheme}: {theme: string, setTheme: Disp
                         </ul>
                     </div>
                     <Link href="/">
-                        <a className="btn btn-ghost normal-case font-bold text-xl flex flex-row">
+                        <a className="btn px-1 md:px-4 btn-ghost normal-case font-bold text-xl flex flex-row">
                             <Image className="mr-2" width={24} height={24} src={Logo} alt="TiMyTI11 Logo"/>
                             <p className="ml-2 my-auto">TiMyTi11</p>
                         </a>
