@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                             </div>
                             <div className="divider md:divider-horizontal"></div>
                             <div
-                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box my-auto">
+                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box mx-auto md:mx-0 my-auto">
                                 <h2 className="text-2xl font-bold mb-2">About Me</h2>
                                 <p className="text-lg">
                                     Hello there! I’m TiMyTi11! A <b>Discord Setup Specialist</b> & <b>Graphic and Motion
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                     <div className="container mx-auto px-8 mt-44">
                         <div className="flex flex-col md:flex-row justify-center w-full">
                             <div
-                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box my-auto">
+                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box mx-auto md:mx-0 my-auto">
                                 <h2 className="text-2xl font-bold mb-2">Why me?</h2>
                                 <p className="text-lg">
                                     I do everything with passion, great prices, I’m <b>friendly</b>, have <u><b>2+
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                             </div>
                             <div className="divider md:divider-horizontal"></div>
                             <div
-                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box my-auto">
+                                className="p-4 max-w-lg z-30 h-full bg-base-300 rounded-box mx-auto md:mx-0 my-auto">
                                 <h2 className="text-2xl font-bold mb-2">My Tools</h2>
                                 <div className="flex flex-row">
                                     <div className="mr-1 flex flex-col justify-center">
