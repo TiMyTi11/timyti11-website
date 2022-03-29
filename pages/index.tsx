@@ -85,34 +85,34 @@ const Home: NextPage = () => {
                                 text={"Very nice, did everything, perfectly, did it quickly, and helped a lot. - Sao"}/>
                         </div>
                     </div>
-                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-xl">
+                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-2xl">
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <CalendarIcon className="h-14 w-14 m-auto mb-2"/>
+                            <CalendarIcon className="h-20 w-20 m-auto mb-2"/>
                             <p>2+ Years of experience</p>
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <ArchiveIcon className="h-14 w-14 m-auto mb-2"/>
+                            <ArchiveIcon className="h-20 h-20 m-auto mb-2"/>
                             <p>5+ projects done</p>
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <EmojiHappyIcon className="h-14 w-14 m-auto mb-2"/>
+                            <EmojiHappyIcon className="h-20 h-20 m-auto mb-2"/>
                             <p>30+ clients happy</p>
                         </div>
                     </div>
 
-                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-xl">
+                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-2xl">
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <h4 className="mb-2">Graphic Design</h4>
-                            <div className="mx-auto radial-progress" style={{"--value": 90} as CSSProperties}>90%</div>
+                            <h4 className="mb-4">Graphic Design</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 90, "--size": "8rem"} as CSSProperties}>90%</div>
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <h4 className="mb-2">Motion Design</h4>
-                            <div className="mx-auto radial-progress" style={{"--value": 100} as CSSProperties}>100%
+                            <h4 className="mb-4">Motion Design</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 100, "--size": "8rem"} as CSSProperties}>100%
                             </div>
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
-                            <h4 className="mb-2">Illustration</h4>
-                            <div className="mx-auto radial-progress" style={{"--value": 50} as CSSProperties}>50%</div>
+                            <h4 className="mb-4">Illustration</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 50, "--size": "8rem"} as CSSProperties}>50%</div>
                         </div>
                     </div>
                 </section>
