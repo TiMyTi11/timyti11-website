@@ -7,6 +7,7 @@ import AI from '../public/assets/adobe/ai.png'
 import Image from "next/image";
 import ReviewBox from "../components/ReviewBox";
 import {ArchiveIcon, CalendarIcon, EmojiHappyIcon} from "@heroicons/react/solid";
+import {CSSProperties} from "react";
 
 const Home: NextPage = () => {
     return (
@@ -96,6 +97,23 @@ const Home: NextPage = () => {
                             <p>30+ clients happy</p>
                         </div>
                     </div>
+
+                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-xl">
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <h4 className="mb-2">Graphic Design</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 90} as CSSProperties}>90%</div>
+                        </div>
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <h4 className="mb-2">Motion Design</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 100} as CSSProperties}>100%</div>
+                        </div>
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <h4 className="mb-2">Illustration</h4>
+                            <div className="mx-auto radial-progress" style={{"--value": 50} as CSSProperties}>50%</div>
+                        </div>
+                    </div>
+
+
                 </section>
                 <section className="py-16 min-h-[50vh] flex flex-col justify-center p-2">
 
