@@ -10,6 +10,7 @@
     "fix": "next lint --fix"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@tailwindcss/typography": "0.5.2",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.16.3",

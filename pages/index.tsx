@@ -6,6 +6,7 @@ import PS from '../public/assets/adobe/ps.png'
 import AI from '../public/assets/adobe/ai.png'
 import Image from "next/image";
 import ReviewBox from "../components/ReviewBox";
+import {ArchiveIcon, CalendarIcon, EmojiHappyIcon} from "@heroicons/react/solid";
 
 const Home: NextPage = () => {
     return (
@@ -70,7 +71,7 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="py-16 min-h-screen flex flex-col justify-center p-2">
+                <section className="py-16 min-h-[50vh] flex flex-col justify-center p-2">
                     <h2 className="z-0 text-3xl font-bold mb-2 mx-auto">What do my clients say?</h2>
                     <div className="container mx-auto px-8">
                         <div className="flex flex-wrap justify-center w-full">
@@ -81,6 +82,23 @@ const Home: NextPage = () => {
                                 text={"Very nice, did everything, perfectly, did it quickly, and helped a lot. - Sao"}/>
                         </div>
                     </div>
+                    <div className="z-0 flex flex-wrap justify-center w-full mt-20 font-bold text-xl">
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <CalendarIcon className="h-14 w-14 m-auto mb-2"/>
+                            <p>2+ Years of experience</p>
+                        </div>
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <ArchiveIcon className="h-14 w-14 m-auto mb-2"/>
+                            <p>5+ projects done</p>
+                        </div>
+                        <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
+                            <EmojiHappyIcon className="h-14 w-14 m-auto mb-2"/>
+                            <p>30+ clients happy</p>
+                        </div>
+                    </div>
+                </section>
+                <section className="py-16 min-h-[50vh] flex flex-col justify-center p-2">
+
                 </section>
             </main>
         </>
