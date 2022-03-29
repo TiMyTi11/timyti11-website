@@ -8,6 +8,8 @@ import Image from "next/image";
 import ReviewBox from "../components/ReviewBox";
 import {ArchiveIcon, CalendarIcon, EmojiHappyIcon} from "@heroicons/react/solid";
 import {CSSProperties} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
     return (
@@ -105,18 +107,42 @@ const Home: NextPage = () => {
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
                             <h4 className="mb-2">Motion Design</h4>
-                            <div className="mx-auto radial-progress" style={{"--value": 100} as CSSProperties}>100%</div>
+                            <div className="mx-auto radial-progress" style={{"--value": 100} as CSSProperties}>100%
+                            </div>
                         </div>
                         <div className="rounded-box bg-base-300 p-3 m-3 flex flex-col">
                             <h4 className="mb-2">Illustration</h4>
                             <div className="mx-auto radial-progress" style={{"--value": 50} as CSSProperties}>50%</div>
                         </div>
                     </div>
-
-
                 </section>
-                <section className="py-16 min-h-[50vh] flex flex-col justify-center p-2">
-
+                <section className="hero py-16 min-h-screen flex flex-col justify-center p-2">
+                    <div className="hero-content text-center">
+                        <div className="container mx-auto px-8">
+                            <div className="flex flex-col md:flex-row justify-center w-full">
+                                <div className="flex flex-col mx-4 mb-3 md:mb-0 justify-center">
+                                    <p className="font-bold text-3xl mb-2">Like my work?</p>
+                                    <div className="flex flex-row justify-center">
+                                        <a href="https://twitter.com/TiMyTiServices"
+                                           className="bg-[#00ACEE] font-bold rounded-lg px-4 py-2.5 flex flex-row shadow-lg text-white">
+                                            <p className="flex flex-col justify-center mr-2">Follow me on</p>
+                                            <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="divider md:divider-horizontal"></div>
+                                <div
+                                    className="p-4 max-w-lg z-0 h-full mx-auto md:mx-0 my-auto">
+                                    <h2 className="text-2xl font-bold mb-2">Join my Discord Server!</h2>
+                                    <a href="https://discord.gg/HS6wMTGD6u" title="Discord Server">
+                                        <Image width={320} height={76} alt="Discord Server Invite Banner"
+                                               className="shadow-xl"
+                                               src="https://discord.com/api/guilds/828019082380836884/widget.png?style=banner2"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>
