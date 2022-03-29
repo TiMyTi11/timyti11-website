@@ -14,7 +14,7 @@
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.16.3",
     "autoprefixer": "10.4.4",
-    "daisyui": "2.13.3",
+    "daisyui": "2.13.4",
     "next": "12.1.2",
     "next-remove-imports": "1.0.6",
     "next-transpile-modules": "9.0.0",
