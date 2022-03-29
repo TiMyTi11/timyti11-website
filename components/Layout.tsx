@@ -11,7 +11,7 @@ const Layout: NextPage = ({children}) => {
 
     useEffect(() => {
         const navbar = document.getElementById("navbar")!;
-        const topAd = document.getElementById("top-ad")!;
+        const topAd = document.getElementById("blockhost-banner")!;
 
         window.onscroll = () => {
             if (window.scrollY >= topAd.clientHeight) {
