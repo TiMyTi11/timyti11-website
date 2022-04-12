@@ -38,7 +38,7 @@ const Portfolio: NextPage = () => {
                             }
                         </div>
                         <a href="https://www.behance.net/TiMyTi11"
-                           className="btn btn-lg btn-primary mx-auto mt-10 mb-20 md:mb-40">See More</a>
+                           className="btn btn-lg btn-primary mx-auto mt-10 mb-72 md:mb-52 fixed bottom-0 z-40 opacity-80">See More</a>
                     </div>
                 </div>
             </main>
