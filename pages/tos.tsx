@@ -15,7 +15,7 @@ const TOS: NextPage = () => {
                             <div className="card text-xl font-semibold bg-base-200 shadow-xl">
                                 <div className="card-body">
                                     <ul className="list-disc ml-4 my-2 gap-2">
-                                        <li>Payments can only be made via PayPal.</li>
+                                        <li>Payments can only be made via PayPal & Ethereum</li>
                                         <li>You are not allowed to resell any products made by me, unless I give you
                                             explicit permission to do so.
                                         </li>
