@@ -4,7 +4,7 @@ import DiscordAvatar from '../public/assets/discord_pfp.gif'
 import AE from '../public/assets/adobe/ae.png'
 import PS from '../public/assets/adobe/ps.png'
 import AI from '../public/assets/adobe/ai.png'
-import BackgroundParticles from "./BackgroundParticles";
+import BackgroundParticles from "../components/BackgroundParticles";
 import Image from "next/image";
 import ReviewBox from "../components/ReviewBox";
 import {ArchiveIcon, CalendarIcon, EmojiHappyIcon} from "@heroicons/react/solid";

@@ -24,6 +24,7 @@ const Layout: NextPage = ({children}) => {
 
     return (
         <div data-theme={theme} className="min-h-screen min-w-screen flex flex-col bg-background text-text scroller">
+            <BackgroundParticles/>
             <ContactMe/>
             <TopAd/>
             <NavBar theme={theme} setTheme={setTheme}/>
