@@ -105,32 +105,32 @@ export default function NavBar({theme, setTheme}: { theme: string, setTheme: Dis
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    // <div className="hidden md:block dropdown dropdown-end">
-                    //     <label tabIndex={0} className="btn btn-ghost rounded-btn">Theme</label>
-                    //     <ul tabIndex={0}
-                    //         className="menu dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-52 mt-4 font-bold">
-                    //         <li className="pb-1">
-                    //             <button className={"btn" + (theme === "dark" ? " btn-primary" : "")}
-                    //                     onClick={() => setTheme("dark")}>Dark
-                    //             </button>
-                    //         </li>
-                    //         <li className="py-1">
-                    //             <button className={"btn" + (theme === "night" ? " btn-primary" : "")}
-                    //                     onClick={() => setTheme("night")}>Night
-                    //             </button>
-                    //         </li>
-                    //         <li className="py-1">
-                    //             <button className={"btn" + (theme === "dracula" ? " btn-primary" : "")}
-                    //                     onClick={() => setTheme("dracula")}>Dracula
-                    //             </button>
-                    //         </li>
-                    //         <li className="pt-1">
-                    //             <button className={"btn" + (theme === "forest" ? " btn-primary" : "")}
-                    //                     onClick={() => setTheme("forest")}>Forest
-                    //             </button>
-                    //         </li>
-                    //     </ul>
-                    // </div>
+                    <div className="hidden md:block dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost rounded-btn">Theme</label>
+                        <ul tabIndex={0}
+                            className="menu dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-52 mt-4 font-bold">
+                            <li className="pb-1">
+                                <button className={"btn" + (theme === "dark" ? " btn-primary" : "")}
+                                        onClick={() => setTheme("dark")}>Dark
+                                </button>
+                            </li>
+                            <li className="py-1">
+                                <button className={"btn" + (theme === "night" ? " btn-primary" : "")}
+                                        onClick={() => setTheme("night")}>Night
+                                </button>
+                            </li>
+                            <li className="py-1">
+                                <button className={"btn" + (theme === "dracula" ? " btn-primary" : "")}
+                                        onClick={() => setTheme("dracula")}>Dracula
+                                </button>
+                            </li>
+                            <li className="pt-1">
+                                <button className={"btn" + (theme === "forest" ? " btn-primary" : "")}
+                                        onClick={() => setTheme("forest")}>Forest
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <a href="https://discord.gg/HS6wMTGD6u" className="ml-4 btn">Contact Me</a>
                 </div>
             </div>
