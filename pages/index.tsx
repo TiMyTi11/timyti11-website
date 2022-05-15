@@ -4,6 +4,7 @@ import DiscordAvatar from '../public/assets/discord_pfp.gif'
 import AE from '../public/assets/adobe/ae.png'
 import PS from '../public/assets/adobe/ps.png'
 import AI from '../public/assets/adobe/ai.png'
+import BackgroundParticles from "./BackgroundParticles";
 import Image from "next/image";
 import ReviewBox from "../components/ReviewBox";
 import {ArchiveIcon, CalendarIcon, EmojiHappyIcon} from "@heroicons/react/solid";
@@ -16,8 +17,9 @@ const Home: NextPage = () => {
         <>
             <GlobalHead pageName="Home"/>
             <main>
-                <header className="hero header-height">
-                    <div className="hero-content text-center">
+                <header className="xn-header">
+                    <BackgroundParticles/>
+                    <div className="container">
                         <div className="max-w-md">
                             <h1 className="text-5xl font-bold">Hi! I'm TiMyTi11.</h1>
                             <p className="py-6 text-lg">I offer Discord Setup and Art Design services.</p>

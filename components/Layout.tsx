@@ -1,7 +1,6 @@
 import {NextPage} from "next";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import BackgroundParticles from "./BackgroundParticles";
 import {useEffect, useState} from "react";
 import TopAd from "./TopAd";
 import ContactMe from "./ContactMe";
@@ -24,7 +23,6 @@ const Layout: NextPage = ({children}) => {
 
     return (
         <div data-theme={theme} className="min-h-screen min-w-screen flex flex-col bg-background text-text scroller">
-            <BackgroundParticles/> 
             <ContactMe/>
             <TopAd/>
             <NavBar theme={theme} setTheme={setTheme}/>
