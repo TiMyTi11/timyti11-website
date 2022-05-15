@@ -11,7 +11,7 @@ export default function BackgroundParticles() {
                       init={particlesInit}
                       options={{
                           autoPlay: true,
-                          detectRetina: true,
+                          detectRetina: true, 
                           duration: 0,
                           fpsLimit: 60,
                           fullscreen: true,
