@@ -1,6 +1,7 @@
 import {NextPage} from "next";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import BackgroundParticles from "./BackgroundParticles";
 import {useEffect, useState} from "react";
 import TopAd from "./TopAd";
 import ContactMe from "./ContactMe";
